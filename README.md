@@ -130,7 +130,7 @@ Controla vários momentos de uma aplicação de trabalho, ela coordena os proces
 
 
 
-### Estados do Step Functions e example tasks
+### Estados do Step Functions 
 
 | Estados |
 | ------- | 
@@ -141,6 +141,8 @@ Controla vários momentos de uma aplicação de trabalho, ela coordena os proces
 | Wait    | 
 | Sucess  | 
 | Fail    | 
+
+###  Example Tasks
 
 | Example Tasks     |
 | ----------------- |
@@ -249,52 +251,6 @@ A AWS é uma ferramenta muito poderosa, é excelente plataforma com excelentes s
 ### Passo a passo da [Aula Nível 1](https://web.dio.me/lab/criando-um-assistente-de-delivery-com-aws-step-functions-e-bedrock/learning/e760a1c8-b9e4-48af-b947-25cb93fe5291?back=/track/engenharia-prompts-aws) e da [Aula Nível 2](https://web.dio.me/lab/criando-um-assistente-de-delivery-com-aws-step-functions-e-bedrock/learning/7e5715ca-1581-411e-ba61-3bea269efe46)
 - Aula Nível 1 de configuração - Permissão de Perfil 
 - Aula Nível 2 de configuração - Disponibilidade de Serviço   
-
-1. No Step Functions
-2. Marque "Execute o encadeamento de prompts de IA com o Amazon Bedrock - novo" e clique em Próximo
-3. Clique em "Usar o modelo"
-4. Visualizar Documentação
-5. Ele está em somente leitura, clique em "Implantar e executar" no canto superior direito.
-6. Clique em "Iniciar execução". ele vai apresentar **falha**.❌
-7. Editar máquina de estado
-8. Configurações
-9. Visualizar no IAM
-10. Adicionar permissões > Anexar políticas para procurar e escolher quais permissões você dará para esse usuário
-11. Adicionar as permissões
-12. Voltar ao Step Functions
-13. Clicar no serviço que acabou de criar
-14. Iniciar execução. Erro ❌
-15. Como visualizar onde deu erro? Ir em "state view", ler o motivo.
-16. Editar estado de máquina
-17. Configuração
-18. Visualizar no IAM
-19. Adicionar permissões
-20. Escolher, clicar e adicionar
-21. Voltar ao Step Functions
-22. Clicar no serviço que acabou de criar
-23. Iniciar execução
-24. Dá erro de novo.❌ Por quê? Você não pode esquecer das configurações do inspetor.
-25. Editar máquina de estado
-26. Inspetor
-27. Inserir modelo ou modelos
-28. Salvar (lado superior esquerdo)
-29. Executar
-30. Iniciar execução
-31. Visualizar detalhes da etapa. ❌ Erro de novo. Por quê? Já deu permissão, mas não tem acesso a esse modelo específico. 1° configurar para dar acesso. 2° Precisa ler o aviso de cada caixinha em "Parâmetros de API". Clicar em "Solicitar acesso ao modelo". Ele vai abrir o passo a passo da solicitação desse modelo. Tem as configurações dentro do Step Functions e as configurações dos serviços específicos. Siga o passo a passo. No caso do exemplo, mostra o link do Amazon Bedrock, clicar. ***❗3°**❗
-32. Conceitos básicos
-33. Modelos de base
-34. Escolha e use um dos modelos que você tem disponível
-35. Inserir modelo no inspetor (em cada uma das caixas)
-36. Salvar
-37. Executar
-38. Iniciar execução. ❌ Erro. Leia a causa.
-39. State view. Agora o erro não é de permissão.
-40. Statemachines
-41. Escolhe e clica
-42. Editar
-43. Configuração
-44. Visualizar no IAM
-❗3°**❗A terceira configuração necessária é configurar do jeito que ele pede. Ele tem o modelo de JSON "Parâmetros de inferência de modelo do Bedrock". Agora é só seguir as boas práticas de criar prompts com Haiku (nesse caso) e ele vai funcionar.
 
 ---
 
