@@ -31,9 +31,7 @@ Se em cada um dos passos, ele depende de alguma ação que está acontecendo em 
 
 ---
 
-### 💡Solução Possível: 
-
--  Ferramentas de Serviços de Mensageria 
+### 💡Solução Possível: Ferramentas de Serviços de Mensageria 
 
 Precisamos de outra ferramenta, que atue como agente e comunique entre os microsserviços e execute alguma função. Um agente que fale: "Alguma coisa aconteceu no histórico de pedidos, preciso disparar uma notificação e o app de delivery tem que se preparar". **Ferramenta de Serviços de Mensageria** - publica uma mensagem para que os outros serviços "ouçam" as novas mensagens, sempre que alguma coisa acontecer. 
 
